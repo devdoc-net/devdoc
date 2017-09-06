@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="keywords" content="developer,development,document,doc,documentation,devdoc,devdocs,java,html,css,javascript,c,c++,Android,Database,Linux,collection"/>
+		<meta name="description" content="This site provides developer's documentation collections for various api/libraries and programming languages" />
+		<title>Developer's Documentation Collections</title>
+
+		<!-- Bootstrap -->
+		<link href="/_link/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet">
+		<link href="/_link/bootstrap-3.3.7/bootstrap-theme.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			h4.list-group-item-heading{
+				color:#883083;
+			}
+			p.list-group-item-text{
+				color:#111111;
+			}
+			li.list-group-item a:hover{
+				text-decoration:none;
+			}
+			li.list-group-item a h4:hover{
+				color:red;
+			}
+			li.list-group-item>span.badge{
+				cursor:cell;
+			}
+			#bookmarks span.badge{
+				cursor:not-allowed;
+				margin-left:5px;
+			}
+			#bookmarks>a.btn{
+				margin:3px;
+			}
+		</style>
+	</head>
+	<body class="container"><!--x#printenv -->
+		<div class="page-header">
+			<h1>Developer's Documentation Collections<a href="http://devdoc.net" style="text-decoration: none"><small>(aka API docs: http://devdoc.net)</small></a></h1>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Bookmarks:</h3>
+			</div>
+			<div class="panel-body" id="bookmarks">
+			</div>
+		</div>
+		<div>
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist" id="navtabs">
+				<li role="presentation" class="active"><a href="#JavaXE" aria-controls="JavaXE" role="tab" data-toggle="tab">JavaXE</a></li>
+				<li role="presentation"><a href="#Apache" aria-controls="Apache" role="tab" data-toggle="tab">Apache</a></li>
+				<li role="presentation"><a href="#JavaWeb" aria-controls="JavaWeb" role="tab" data-toggle="tab">JavaWeb</a></li>
+				<li role="presentation"><a href="#JavaMisc" aria-controls="JavaMisc" role="tab" data-toggle="tab">JavaMisc</a></li>
+				<li role="presentation"><a href="#Web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
+				<li role="presentation"><a href="#Database" aria-controls="Database" role="tab" data-toggle="tab">Database</a></li>
+				<li role="presentation"><a href="#Android" aria-controls="Android" role="tab" data-toggle="tab">Android</a></li>
+				<li role="presentation"><a href="#Python" aria-controls="Python" role="tab" data-toggle="tab">Python</a></li>
+				<li role="presentation"><a href="#Bigdata" aria-controls="Bigdata" role="tab" data-toggle="tab">Bigdata</a></li>
+				<li role="presentation"><a href="#Linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+				<li role="presentation"><a href="#C" aria-controls="C" role="tab" data-toggle="tab">C/C++</a></li>
+				<li role="presentation"><a href="#Maven" aria-controls="Maven" role="tab" data-toggle="tab">Maven</a></li>
+				<!--#if expr='v("var_private")=="true"' -->
+				<li role="presentation"><a href="#Pdf" aria-controls="Pdf" role="tab" data-toggle="tab">Pdf</a></li>
+				<li role="presentation"><a href="#Private" aria-controls="Private" role="tab" data-toggle="tab">Private</a></li>
+				<!--#endif -->
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="JavaXE">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Various javadoc and tutorials for Java Standard/Enterprise Edition</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaTutorial_20160719/"><h4 class="list-group-item-heading">Java Tutorial</h4><p class="list-group-item-text">The official Java Tutorial from Oracle</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/jdk8/"><h4 class="list-group-item-heading">JavaSE 8 Doc</h4><p class="list-group-item-text">Java Standard Edition 8 documentation</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/jdk8api/"><h4 class="list-group-item-heading">Java 8 API</h4><p class="list-group-item-text">JDK 8 javadoc documentation</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/jdk7/"><h4 class="list-group-item-heading">JavaSE 7 Doc</h4><p class="list-group-item-text">Java Standard Edition 7 documentation</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/jdk7api/"><h4 class="list-group-item-heading">Java 7 API</h4><p class="list-group-item-text">JDK 7 javadoc documentation</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaEE-7u2/docs/api/"><h4 class="list-group-item-heading">JavaEE 7 API</h4><p class="list-group-item-text">Java Enterprise Edition 7 javadoc reference, including Servlet, JPA, EJB, Websocket etc.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaEE-7u2/docs/javaee-tutorial/doc/"><h4 class="list-group-item-heading">JavaEE 7 Tutorial</h4><p class="list-group-item-text">Learn all about developing enterprise applications by working your way through this tutorial, which includes working examples and instructions for creating applications with Java EE 7 technologies, including new and updated technologies: Java API for WebSocket, JSON Processing, Batch, Concurrency Utilities, JMS, Java Servlets, RESTful Web Services, JavaServer Faces, Enterprise JavaBeans, Java Persistence API, Contexts and Dependency Injection for Java EE, and more.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaEE-7u2/"><h4 class="list-group-item-heading">JavaEE 7 Doc</h4><p class="list-group-item-text">Java Enterprise Edition 7 Documentation</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaEE-6.0.1/"><h4 class="list-group-item-heading">JavaEE 6 API</h4><p class="list-group-item-text">Java Enterprise Edition 6 reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/JavaEEXmlSchemas_20170417/"><h4 class="list-group-item-heading">JavaEE Xml Schemas</h4><p class="list-group-item-text">Java EE: XML Schemas for Java EE Deployment Descriptors</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaxe/javafx-8u131-apidocs/"><h4 class="list-group-item-heading">JavaFX 8 API</h4><p class="list-group-item-text">JavaFX is a software platform for creating and delivering desktop applications, as well as rich internet applications (RIAs) that can run across a wide variety of devices.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Apache">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for Java related libraries from Apache Software Foundation. For Hadoop related software check the Bigdata tab, for Apache httpd check the Linux tab.</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-codec-1.10/"><h4 class="list-group-item-heading">commons-codec</h4><p class="list-group-item-text">General encoding/decoding algorithms (for example phonetic, base64, URL).</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-collections4-4.1/"><h4 class="list-group-item-heading">commons-collections4</h4><p class="list-group-item-text">Extends or augments the Java Collections Framework.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-dbcp-1.4/"><h4 class="list-group-item-heading">commons-dbcp</h4><p class="list-group-item-text">Database connection pooling services.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-dbutils-1.6/"><h4 class="list-group-item-heading">commons-dbutils</h4><p class="list-group-item-text">JDBC helper library.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-io-2.4/"><h4 class="list-group-item-heading">commons-io</h4><p class="list-group-item-text">Commons IO is a library of utilities to assist with developing IO functionality.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-lang3-3.3.2/"><h4 class="list-group-item-heading">commons-lang3</h4><p class="list-group-item-text">Provides extra functionality for classes in java.lang.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-logging-1.1.1/"><h4 class="list-group-item-heading">commons-logging</h4><p class="list-group-item-text">Wrapper around a variety of logging API implementations.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-math3-3.5/"><h4 class="list-group-item-heading">commons-math3</h4><p class="list-group-item-text">Lightweight, self-contained mathematics and statistics components.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/commons-vfs2-2.0/"><h4 class="list-group-item-heading">commons-vfs2</h4><p class="list-group-item-text">Virtual File System component for treating files, FTP, SMB, ZIP and such like as a single logical file system.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/ant-1.9.4/"><h4 class="list-group-item-heading">Ant</h4><p class="list-group-item-text">Apache Ant is a Java-based build tool. In theory, it is kind of like make, without make's wrinkles.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/log4j-1.2.17/"><h4 class="list-group-item-heading">log4j</h4><p class="list-group-item-text">A logging library for Java</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/poi-3.13/"><h4 class="list-group-item-heading">POI</h4><p class="list-group-item-text">Apache POI - the Java API for Microsoft Documents</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-core-4.4.1-javadoc/"><h4 class="list-group-item-heading">HttpComponents Core Javadoc</h4><p class="list-group-item-text">The HttpComponents Core javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-client-4.5-javadoc/"><h4 class="list-group-item-heading">HttpComponents Client Javadoc</h4><p class="list-group-item-text">The HttpComponents Client javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-asyncclient-4.1-javadoc/"><h4 class="list-group-item-heading">HttpComponents AsyncClient Javadoc</h4><p class="list-group-item-text">The HttpComponents AsyncClient javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-core-4.3/tutorial/html/"><h4 class="list-group-item-heading">HttpComponents Core 4.3 Tutorial</h4><p class="list-group-item-text">The classic HttpComponents Core tutorial</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-core-4.3/javadoc/"><h4 class="list-group-item-heading">HttpComponents Core 4.3 Javadoc</h4><p class="list-group-item-text">The classic HttpComponents Core javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-client-4.3/tutorial/html/"><h4 class="list-group-item-heading">HttpComponents Client 4.3 Tutorial</h4><p class="list-group-item-text">The classic HttpComponents Client tutorial</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="apache/httpcomponents-client-4.3/javadoc/"><h4 class="list-group-item-heading">HttpComponents Client 4.3 Javadoc</h4><p class="list-group-item-text">The classic HttpComponents Client javadoc</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="JavaWeb">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Document for Spring, SpringMVC, Struts, Hibernate, Mybatis, etc.</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/tomcat-7.0.37/servletapi/"><h4 class="list-group-item-heading">Servlet API</h4><p class="list-group-item-text">JavaEE Servlet javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/jstl-tlddoc/"><h4 class="list-group-item-heading">JSTL</h4><p class="list-group-item-text">The JavaServer Pages Standard Tag Library (JSTL) is a component of the Java EE Web application development platform. It extends the JSP specification by adding a tag library of JSP tags for common tasks, such as XML data processing, conditional execution, database access, loops and internationalization.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-4.2.3/javadoc-api/"><h4 class="list-group-item-heading">Spring 4 javadoc</h4><p class="list-group-item-text">Spring Framework 4 javadoc reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-4.2.3/spring-framework-reference/html/"><h4 class="list-group-item-heading">Spring 4 Manual</h4><p class="list-group-item-text">Spring Framework 4 manual on multiple pages</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-4.2.3/spring-framework-reference/htmlsingle/"><h4 class="list-group-item-heading">Spring 4 Manual (Single)</h4><p class="list-group-item-text">Spring Framework 4 manual on a single page</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring_3.2.10/javadoc-api/"><h4 class="list-group-item-heading">Spring 3 javadoc</h4><p class="list-group-item-text">Spring Framework 3 javadoc reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring_3.2.10/spring-framework-reference/html/"><h4 class="list-group-item-heading">Spring 3 Manual</h4><p class="list-group-item-text">Spring Framework 3 manual on multiple pages</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring_3.2.10/spring-framework-reference/htmlsingle/"><h4 class="list-group-item-heading">Spring 3 Manual (Single)</h4><p class="list-group-item-text">Spring Framework 3 manual on a single page</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/SpringBoot-1.5.3-javadoc/"><h4 class="list-group-item-heading">SpringBoot javadoc</h4><p class="list-group-item-text">Spring Framework 3 javadoc reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/SpringBootReference_1.5.3/html/"><h4 class="list-group-item-heading">SpringBoot Manual</h4><p class="list-group-item-text">SpringBoot manual on multiple pages</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/SpringBootReference_1.5.3/htmlsingle/"><h4 class="list-group-item-heading">SpringBoot Manual (Single)</h4><p class="list-group-item-text">SpringBoot manual on a single page</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-Security-3.2.5/guides/"><h4 class="list-group-item-heading">Spring Security Guides</h4><p class="list-group-item-text">Spring Security is a powerful and highly customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-Security-3.2.5/reference/htmlsingle/"><h4 class="list-group-item-heading">Spring Security Reference</h4><p class="list-group-item-text">Spring Security is a powerful and highly customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/spring/Spring-Security-3.2.5/apidocs/"><h4 class="list-group-item-heading">Spring Security Javadoc</h4><p class="list-group-item-text">Spring Security is a powerful and highly customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/struts/Struts2_2.3.24_index/"><h4 class="list-group-item-heading">Struts2</h4><p class="list-group-item-text">Apache Struts 2 is an elegant, extensible framework for creating enterprise-ready Java web applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/struts/Struts_2.3.8-site/"><h4 class="list-group-item-heading">Struts2 Site</h4><p class="list-group-item-text">Apache Struts 2 is an elegant, extensible framework for creating enterprise-ready Java web applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/mybatis/mybatis-3.3.0-site/"><h4 class="list-group-item-heading">MyBatis Manual</h4><p class="list-group-item-text">MyBatis is a first class persistence framework with support for custom SQL, stored procedures and advanced mappings.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/mybatis/mybatis-3.3.0-javadoc/"><h4 class="list-group-item-heading">MyBatis javadoc</h4><p class="list-group-item-text">This is the javadoc for MyBatis</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/mybatis/mybatis-spring-1.2.3-site/"><h4 class="list-group-item-heading">MyBatis-Spring</h4><p class="list-group-item-text">MyBatis-Spring integrates MyBatis seamlessly with Spring.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/mybatis/mybatis-spring-1.2.3-javadoc/"><h4 class="list-group-item-heading">MyBatis-Spring javadoc</h4><p class="list-group-item-text">This is the javadoc for MyBatis-Spring</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate_3.6.10/manual/en-US/html/"><h4 class="list-group-item-heading">Hibernate 3 Manual</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate_3.6.10/quickstart/en-US/html_single/"><h4 class="list-group-item-heading">Hibernate 3 Getting Started Guide</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate_3.6.10/javadocs/"><h4 class="list-group-item-heading">Hibernate 3 Javadoc</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate-5.1.0/userGuide/en-US/html/"><h4 class="list-group-item-heading">Hibernate 5 User Guide</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate-5.1.0/quickstart/html/"><h4 class="list-group-item-heading">Hibernate 5 Getting Started Guide</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate-5.1.0/mappingGuide/en-US/html_single/"><h4 class="list-group-item-heading">Hibernate 5 Domain Model Mapping Guide</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate-5.1.0/javadocs/"><h4 class="list-group-item-heading">Hibernate 5 Javadoc</h4><p class="list-group-item-text">Hibernate ORM enables developers to more easily write applications whose data outlives the application process.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/tomcat-7.0.37/"><h4 class="list-group-item-heading">Tomcat</h4><p class="list-group-item-text">Apache Tomcat is an open-source Java Servlet Container developed by the Apache Software Foundation (ASF). Tomcat implements several Java EE specifications including Java Servlet, JavaServer Pages (JSP), Java EL, and WebSocket, and provides a "pure Java" HTTP web server environment in which Java code can run.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/jetty-9.2.6.v20141205-javadoc/"><h4 class="list-group-item-heading">Jetty</h4><p class="list-group-item-text">Eclipse Jetty is a Java HTTP (Web) server and Java Servlet container. Jetty is now often used for machine to machine communications, usually within larger software frameworks.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/aop/AopAlliance/"><h4 class="list-group-item-heading">AOP Alliance</h4><p class="list-group-item-text">The AOP Alliance project is a joint open-source project between several software engineering people who are interested in AOP and Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/aop/AspectJ_1.8.3/"><h4 class="list-group-item-heading">AspectJ</h4><p class="list-group-item-text">AspectJ is a seamless aspect-oriented extension to Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/aop/AspectJ_1.8.3/aspectj5rt-api/"><h4 class="list-group-item-heading">AspectJ aspectj5rt-api</h4><p class="list-group-item-text">AspectJ is a seamless aspect-oriented extension to Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/aop/AspectJ_1.8.3/runtime-api/"><h4 class="list-group-item-heading">AspectJ runtime-api</h4><p class="list-group-item-text">AspectJ is a seamless aspect-oriented extension to Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/aop/AspectJ_1.8.3/weaver-api/"><h4 class="list-group-item-heading">AspectJ weaver-api</h4><p class="list-group-item-text">AspectJ is a seamless aspect-oriented extension to Java.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="JavaMisc">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Document for miscellaneous Java libraries</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/cglib-3.2.5/"><h4 class="list-group-item-heading">cglib</h4><p class="list-group-item-text">Byte Code Generation Library is high level API to generate and transform JAVA byte code. It is used by AOP, testing, data access frameworks to generate dynamic proxy objects and intercept field access.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/dom4j-1.6.1/"><h4 class="list-group-item-heading">dom4j</h4><p class="list-group-item-text">dom4j is an easy to use, open source library for working with XML, XPath and XSLT on the Java platform using the Java Collections Framework and with full support for DOM, SAX and JAXP.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/jackson/jackson-core-2.9.0/"><h4 class="list-group-item-heading">jackson-core</h4><p class="list-group-item-text">Streaming ("jackson-core") defines low-level streaming API, and includes JSON-specific implementations</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/jackson/jackson-annotations-2.9.0/"><h4 class="list-group-item-heading">jackson-annotations</h4><p class="list-group-item-text">Annotations ("jackson-annotations") contains standard Jackson annotations</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/jackson/jackson-databind-2.9.0/"><h4 class="list-group-item-heading">jackson-databind</h4><p class="list-group-item-text">Databind ("jackson-databind") implements data-binding (and object serialization) support on streaming package</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/javassist-3.20/tutorial/tutorial.html"><h4 class="list-group-item-heading">Javassist Tutorial</h4><p class="list-group-item-text">Javassist is a class library for dealing with Java bytecode. Java bytecode is stored in a binary file called a class file. Each class file contains one Java class or interface.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/javassist-3.20/javadoc/"><h4 class="list-group-item-heading">Javassist Javadoc</h4><p class="list-group-item-text">Javassist javadoc API</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/jfreechart-1.0.19/"><h4 class="list-group-item-heading">JFreeChart</h4><p class="list-group-item-text">JFreeChart is a free chart library for Java that can generate a wide variety of charts for use in both client (Swing and JavaFX) and server (web) applications.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/JNA-4.4.0/wiki_index/"><h4 class="list-group-item-heading">JNA Wiki</h4><p class="list-group-item-text">Java Native Access (JNA) is a library for simplified native library access for Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/JNA-4.4.0/javadoc/"><h4 class="list-group-item-heading">JNA Javadoc</h4><p class="list-group-item-text">Java Native Access (JNA) is a library for simplified native library access for Java.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/joda-time-2.9.4/"><h4 class="list-group-item-heading">Joda-Time</h4><p class="list-group-item-text">Joda-Time provides a quality replacement for the Java date and time classes.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/junit/junit-4.12-site/"><h4 class="list-group-item-heading">JUnit 4</h4><p class="list-group-item-text">JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/junit/junit-4.12-javadoc/"><h4 class="list-group-item-heading">JUnit 4 API</h4><p class="list-group-item-text">Javadoc reference for JUnit 4</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/miglayout/QuickStart.html"><h4 class="list-group-item-heading">MigLayout QuickStart</h4><p class="list-group-item-text">Easy to use yet very powerful Java Swing, JavaFX 2 and SWT layout manager</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/miglayout/cheatsheet.html"><h4 class="list-group-item-heading">MigLayout CheatSheet</h4><p class="list-group-item-text">Easy to use yet very powerful Java Swing, JavaFX 2 and SWT layout manager</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/miglayout/whitepaper.html"><h4 class="list-group-item-heading">MigLayout WhitePaper</h4><p class="list-group-item-text">Easy to use yet very powerful Java Swing, JavaFX 2 and SWT layout manager</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/miglayout/miglayout-5.0-javadoc/"><h4 class="list-group-item-heading">MigLayout Javadoc</h4><p class="list-group-item-text">Easy to use yet very powerful Java Swing, JavaFX 2 and SWT layout manager</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/miglayout/miglayout-4.0-javadoc/"><h4 class="list-group-item-heading">MigLayout 4.0 Javadoc</h4><p class="list-group-item-text">The classic version of MigLayout</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/netty-4.1.11/"><h4 class="list-group-item-heading">Netty</h4><p class="list-group-item-text">Netty is an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/not-yet-commons-ssl-0.3.17/"><h4 class="list-group-item-heading">Not-Yet-Commons-SSL</h4><p class="list-group-item-text">A powerful Java library who provides SSL related functionality in an easy way.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/quartz-2.2.2/"><h4 class="list-group-item-heading">Quartz</h4><p class="list-group-item-text">Quartz is a richly featured, open source job scheduling library that can be integrated within virtually any Java application - from the smallest stand-alone application to the largest e-commerce system.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/square/okhttp-3.8.0/"><h4 class="list-group-item-heading">Square OkHttp</h4><p class="list-group-item-text">An HTTP & HTTP/2 client for Android and Java applications</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/square/retrofit-2.3.0/"><h4 class="list-group-item-heading">Square Retrofit</h4><p class="list-group-item-text">A type-safe HTTP client for Android and Java: Retrofit turns your HTTP API into a Java interface.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/square/okio-1.13.0/"><h4 class="list-group-item-heading">Square Okio</h4><p class="list-group-item-text">Okio complements java.io and java.nio to make it much easier to access, store, and process your data.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/SwingX-1.6.5-1-javadoc/"><h4 class="list-group-item-heading">SwingX</h4><p class="list-group-item-text">SwingX is a library of components and utilities extending the Java Swing library.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/SWT-4.6.3-javadoc/"><h4 class="list-group-item-heading">SWT API</h4><p class="list-group-item-text">SWT (Standard Widget Toolkit): SWT is an open source widget toolkit for Java designed to provide efficient, portable access to the user-interface facilities of the operating systems on which it is implemented.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javamisc/unix4j-0.4/"><h4 class="list-group-item-heading">unix4j</h4><p class="list-group-item-text">Unix4j is an implementation of Unix command line tools in Java. You can use the commands that you know from Unix in a Java program---you can pipe the results of one command to another as you know it from Unix.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Web">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentations for Web related technology</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/jqapi_20140211/"><h4 class="list-group-item-heading">jQuery</h4><p class="list-group-item-text">jQuery is a fast, small, and feature-rich JavaScript library.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/bootstrap-3.3.7/site/index/"><h4 class="list-group-item-heading">Bootstrap</h4><p class="list-group-item-text">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/docs/Web/HTML/Reference.html"><h4 class="list-group-item-heading">HTML Reference</h4><p class="list-group-item-text">Reference of HTML elements and attributes</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/docs/DOM/CSS.html"><h4 class="list-group-item-heading">CSS Reference</h4><p class="list-group-item-text">Reference of CSS including CSS1, CSS2.1 and CSS3</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/index.html"><h4 class="list-group-item-heading">JavaScript Reference</h4><p class="list-group-item-text">Reference of Generic JavaScript (ECMAScript)</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/docs/DOM.1.html"><h4 class="list-group-item-heading">DOM Reference</h4><p class="list-group-item-text">Reference of Document Object Model (DOM) to JavaScript</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/docs/HTTP.1.html"><h4 class="list-group-item-heading">HTTP Reference</h4><p class="list-group-item-text">Reference of Hypertext Transfer Protocol (HTTP)</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/ExtJS_4.2.1.883/"><h4 class="list-group-item-heading">ExtJS</h4><p class="list-group-item-text">ExtJS is a pure JavaScript application framework that works on all modern browsers.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Database">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for various databases</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/MySQL-refman-5.7/"><h4 class="list-group-item-heading">MySQL: Reference Manual</h4><p class="list-group-item-text">The world's most popular open source database</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/MySQL-Utilities-1.6/"><h4 class="list-group-item-heading">MySQL: Utilities Manual</h4><p class="list-group-item-text">Utilities Manual</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/"><h4 class="list-group-item-heading">Oracle 11g</h4><p class="list-group-item-text">Oracle database documentation library 11g Release 2</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e25513/index.htm"><h4 class="list-group-item-heading">Oracle: Data Dictionary Reference</h4><p class="list-group-item-text">Data dictionary such as ALL_*, DBA_*, USER_*</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/appdev.112/e25519/toc.htm"><h4 class="list-group-item-heading">Oracle: PL/SQL Language Reference</h4><p class="list-group-item-text">PL/SQL Language Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/appdev.112/e25788/toc.htm"><h4 class="list-group-item-heading">Oracle: PL/SQL Packages and Types Reference</h4><p class="list-group-item-text">PL/SQL Packages and Types Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e16605/toc.htm"><h4 class="list-group-item-heading">Oracle: SQL*Plus® Quick Reference</h4><p class="list-group-item-text">SQL*Plus® Quick Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e16604/toc.htm"><h4 class="list-group-item-heading">Oracle: SQL*Plus® User's Guide and Reference</h4><p class="list-group-item-text">SQL*Plus® User's Guide and Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e17119/toc.htm"><h4 class="list-group-item-heading">Oracle: SQL Language Quick Reference</h4><p class="list-group-item-text">SQL Language Quick Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e26088/toc.htm"><h4 class="list-group-item-heading">Oracle: SQL Language Reference</h4><p class="list-group-item-text">SQL Language Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/OracleDoc_11gR2/server.112/e22490/toc.htm"><h4 class="list-group-item-heading">Oracle: Utilities Manual</h4><p class="list-group-item-text">Utilities Manual</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/ojdbc6_11g/"><h4 class="list-group-item-heading">Oracle: ojdbc6</h4><p class="list-group-item-text">Oracle 11g JDBC javadoc</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/PostgreSQL-9.4/"><h4 class="list-group-item-heading">PostgreSQL</h4><p class="list-group-item-text">The world's most advanced open source database</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/postgresql-jdbc-91/"><h4 class="list-group-item-heading">PostgreSQL JDBC</h4><p class="list-group-item-text">JDBC Documentation Driver for PostgreSQL</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="database/sqlite-3.0.7.2/"><h4 class="list-group-item-heading">SQLite</h4><p class="list-group-item-text">SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Android">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for Android SDK and related libraries</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="android/Android-r19/reference/"><h4 class="list-group-item-heading">Android-r19</h4><p class="list-group-item-text">Android document r19</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="android/Android-r15/reference/"><h4 class="list-group-item-heading">Android-r15</h4><p class="list-group-item-text">For those who don't like the new style Android document</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="android/picasso-2.5.2/"><h4 class="list-group-item-heading">picasso</h4><p class="list-group-item-text">A powerful image downloading and caching library for Android</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Python">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for Python and related packages</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/python-3.6.1/"><h4 class="list-group-item-heading">Python 3</h4><p class="list-group-item-text">Python is a programming language that lets you work quickly and integrate systems more effectively</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/python-2.7.13/"><h4 class="list-group-item-heading">Python 2</h4><p class="list-group-item-text">Python is a programming language that lets you work quickly and integrate systems more effectively</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/numpy-1.12.0/"><h4 class="list-group-item-heading">NumPy</h4><p class="list-group-item-text">NumPy is the fundamental package for scientific computing with Python.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/scipy-0.19.0/"><h4 class="list-group-item-heading">SciPy</h4><p class="list-group-item-text">SciPy (pronounced "Sigh Pie") is open-source software for mathematics, science, and engineering.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/sklearn-0.18/"><h4 class="list-group-item-heading">scikit-learn</h4><p class="list-group-item-text">Machine Learning in Python</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/scikit-learn-docs_0.18.1/"><h4 class="list-group-item-heading">scikit-learn User Guide</h4><p class="list-group-item-text">Machine Learning in Python</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/matplotlib-2.0.0/"><h4 class="list-group-item-heading">Matplotlib</h4><p class="list-group-item-text">Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/pandas-0.19.2/"><h4 class="list-group-item-heading">pandas</h4><p class="list-group-item-text">Powerful Python data analysis toolkit</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="python/sympy-1.0/"><h4 class="list-group-item-heading">SymPy</h4><p class="list-group-item-text">SymPy is a Python library for symbolic mathematics.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Bigdata">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for the Hadoop ecosystem</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/hadoop-2.7.1/"><h4 class="list-group-item-heading">Hadoop 2</h4><p class="list-group-item-text">Apache Hadoop is an open-source software framework used for distributed storage and processing of dataset of big data using the MapReduce programming model.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/Hadoop-1.2.1/"><h4 class="list-group-item-heading">Hadoop 1</h4><p class="list-group-item-text">Apache Hadoop is an open-source software framework used for distributed storage and processing of dataset of big data using the MapReduce programming model.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/Hadoop-1.2.1-DevAPI/"><h4 class="list-group-item-heading">Hadoop 1 Dev API</h4><p class="list-group-item-text">This is the development API for Hadoop 1.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/hbase-0.98.7-hadoop1/"><h4 class="list-group-item-heading">HBase</h4><p class="list-group-item-text">Apache HBase™ is the Hadoop database, a distributed, scalable, big data store.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/hive-0.12.0/"><h4 class="list-group-item-heading">Hive</h4><p class="list-group-item-text">Hive is a data warehouse infrastructure built on top of Hadoop.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="bigdata/Pig-0.13.0/"><h4 class="list-group-item-heading">Pig</h4><p class="list-group-item-text">Apache Pig is a high-level platform for creating programs that runs on Apache Hadoop. The language for this platform is called Pig Latin.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Linux">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for Linux and related tools</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/man7.org-20170728/"><h4 class="list-group-item-heading">Man Pages</h4><p class="list-group-item-text">Man pages for various Linux commands and APIs</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/POSIXstandard/"><h4 class="list-group-item-heading">POSIX.1-2008 Standard</h4><p class="list-group-item-text">POSIX.1-2008 defines a standard operating system interface and environment, including a command interpreter (or “shell”), and common utility programs to support applications portability at the source code level.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/perldoc-5.22.0/"><h4 class="list-group-item-heading">Perl 5</h4><p class="list-group-item-text">Perl 5 is a highly capable, feature-rich programming language</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/httpd-2.2.32/"><h4 class="list-group-item-heading">Apache httpd 2.2</h4><p class="list-group-item-text">The Number One HTTP Server On The Internet</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/httpd-2.4.25/"><h4 class="list-group-item-heading">Apache httpd 2.4</h4><p class="list-group-item-text">The Number One HTTP Server On The Internet</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/mod_perl-20170730/"><h4 class="list-group-item-heading">mod_perl</h4><p class="list-group-item-text">mod_perl brings together the full power of the Perl programming language and the Apache HTTP server. You can use Perl to manage Apache, respond to requests for web pages and much more.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/ImageMagick_6.9.8-jmagick_6.7.7/Document-6.9.8/"><h4 class="list-group-item-heading">ImageMagick</h4><p class="list-group-item-text">Use ImageMagick® to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 200).</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/ImageMagick_6.9.8-jmagick_6.7.7/jmagick-6.7.7-javadoc/"><h4 class="list-group-item-heading">JMagick</h4><p class="list-group-item-text">JMagick provides an object-oriented Java interface to ImageMagick.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/OpenCV-3.2.0/"><h4 class="list-group-item-heading">OpenCV</h4><p class="list-group-item-text">OpenCV (Open Source Computer Vision Library) is an open-source BSD-licensed library that includes several hundreds of computer vision algorithms.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/OpenCV-javadoc-3.2.0/"><h4 class="list-group-item-heading">OpenCV javadoc</h4><p class="list-group-item-text">Java API for OpenCV</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/UnixToolbox.html"><h4 class="list-group-item-heading">Unix Toolbox</h4><p class="list-group-item-text">This document is a collection of Unix/Linux/BSD commands and tasks which are useful for IT work or for advanced users.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/bash-4.4.html"><h4 class="list-group-item-heading">bash</h4><p class="list-group-item-text">Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh).</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/findutils-4.5.11.html"><h4 class="list-group-item-heading">findutils</h4><p class="list-group-item-text">The GNU Find Utilities are the basic directory searching utilities of the GNU operating system. These programs are typically used in conjunction with other programs to provide modular and powerful directory search and file locating capabilities to other commands.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/gawk-4.1.html"><h4 class="list-group-item-heading">gawk</h4><p class="list-group-item-text">The awk utility interprets a special-purpose programming language that makes it possible to handle simple data-reformatting jobs with just a few lines of code.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/gnulib-20170906.html"><h4 class="list-group-item-heading">gnulib</h4><p class="list-group-item-text">The GNU Portability Library</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/gpp-2.24.html"><h4 class="list-group-item-heading">gpp(Generic Preprocessor)</h4><p class="list-group-item-text">GPP is a general-purpose preprocessor with customizable syntax, suitable for a wide range of preprocessing tasks. Its independence from any programming language makes it much more versatile than cpp, while its syntax is lighter and more flexible than that of m4.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/grep-3.0.html"><h4 class="list-group-item-heading">grep</h4><p class="list-group-item-text">Greg is a framework for testing other programs and libraries. Its purpose is to provide a single front end for all tests and to be a small, simple framework for writing tests. Greg leverages off the Guile language to provide all the power (and more) of other test frameworks with greater simplicity and ease of use.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/make-4.1.html"><h4 class="list-group-item-heading">make</h4><p class="list-group-item-text">GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/sed-4.4.html"><h4 class="list-group-item-heading">sed</h4><p class="list-group-item-text">sed (stream editor) is a non-interactive command-line text editor.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="linux/socat-1.7.3_index/"><h4 class="list-group-item-heading">socat</h4><p class="list-group-item-text">Socat is a command line based utility that establishes two bidirectional byte streams and transfers data between them.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="C">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Documentation for C/C++ Language</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/cplusplus-20170409/en/"><h4 class="list-group-item-heading">C/C++ Reference</h4><p class="list-group-item-text">C/C++ Reference</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/cplusplus_tutorial_201706/"><h4 class="list-group-item-heading">C/C++ Tutorial</h4><p class="list-group-item-text">C/C++ Tutorial</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/gnu-c-manual-0.2.5.html"><h4 class="list-group-item-heading">GNU C Reference Manual</h4><p class="list-group-item-text">This is a reference manual for the C programming language as implemented by the GNU Compiler Collection (GCC). This manual describes C89 as its baseline. C99 features and GNU extensions are explicitly labeled as such.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/glibc_2.26/"><h4 class="list-group-item-heading">glibc Manual</h4><p class="list-group-item-text">Manual for the GNU C Library</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/gcc_7.2/"><h4 class="list-group-item-heading">GCC Manual</h4><p class="list-group-item-text">Manual for the GNU Compiler Collection (GCC)</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/libstdc++_7.2/"><h4 class="list-group-item-heading">libstdc++ Manual</h4><p class="list-group-item-text">Manual for the GCC Standard C++ Library</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/libstdc++-api_7.2/"><h4 class="list-group-item-heading">libstdc++ API</h4><p class="list-group-item-text">Reference Manual for the GCC Standard C++ Library API</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="c/cpp_7.2/"><h4 class="list-group-item-heading">CPP Manual</h4><p class="list-group-item-text">Manual for the GCC C Preprocessor</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Maven">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Maven and its plugins</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/maven-site-3.3.9-20170320/"><h4 class="list-group-item-heading">Maven Site</h4><p class="list-group-item-text">Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/archetype-3.0.1/"><h4 class="list-group-item-heading">Maven: archetype</h4><p class="list-group-item-text">In short, Archetype is a Maven project templating toolkit. An archetype is defined as an original pattern or model from which all other things of the same kind are made.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/assembly-3.0.0/"><h4 class="list-group-item-heading">Maven: assembly</h4><p class="list-group-item-text">The Assembly Plugin for Maven is primarily intended to allow users to aggregate the project output along with its dependencies, modules, site documentation, and other files into a single distributable archive.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/compiler-3.6.1/"><h4 class="list-group-item-heading">Maven: compiler</h4><p class="list-group-item-text">The Compiler Plugin is used to compile the sources of your project.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/deploy-2.8.2/"><h4 class="list-group-item-heading">Maven: deploy</h4><p class="list-group-item-text">The deploy plugin is primarily used during the deploy phase, to add your artifact(s) to a remote repository for sharing with other developers and projects.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/jar-3.0.2/"><h4 class="list-group-item-heading">Maven: jar</h4><p class="list-group-item-text">This plugin provides the capability to build jars.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/javadoc-2.10.4/"><h4 class="list-group-item-heading">Maven: javadoc</h4><p class="list-group-item-text">The Javadoc Plugin uses the Javadoc tool to generate javadocs for the specified project.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/nar-3.5.0/"><h4 class="list-group-item-heading">Maven: nar</h4><p class="list-group-item-text">This plugin for Maven 2 allows you to compile native code (c++, c and fortran) on a number of different architectures (Linux, Windows, MacOSX, Solaris, ...) and with a number of different compilers/linkers (g++, Microsoft Visual C++, CC, ...)</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/shade-3.0.0/"><h4 class="list-group-item-heading">Maven: shade</h4><p class="list-group-item-text">This plugin provides the capability to package the artifact in an uber-jar, including its dependencies and to shade - i.e. rename - the packages of some of the dependencies.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/site-3.6/"><h4 class="list-group-item-heading">Maven: site</h4><p class="list-group-item-text">The Site Plugin is used to generate a site for the project. The generated site also includes the project's reports that were configured in the POM.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/springboot-1.5.3/"><h4 class="list-group-item-heading">Maven: springboot</h4><p class="list-group-item-text">The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application “in-place”.</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="maven/war-3.1.0/"><h4 class="list-group-item-heading">Maven: war</h4><p class="list-group-item-text">The WAR Plugin is responsible for collecting all artifact dependencies, classes and resources of the web application and packaging them into a web application archive.</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--#if expr='v("var_private")=="true"' -->
+				<div role="tabpanel" class="tab-pane" id="Pdf">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">PDF docs</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="pdf/cplusplus_tutorial_201706.pdf"><h4 class="list-group-item-heading">cplusplus_tutorial_201706</h4><p class="list-group-item-text"></p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="pdf/scikit-learn-docs_0.18.1.pdf"><h4 class="list-group-item-heading">scikit-learn-docs_0.18.1</h4><p class="list-group-item-text"></p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="pdf/MigLayout-QuickStart.pdf"><h4 class="list-group-item-heading">MigLayout-QuickStart</h4><p class="list-group-item-text"></p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="pdf/postgresql-9.5-A4.pdf"><h4 class="list-group-item-heading">postgresql-9.5</h4><p class="list-group-item-text"></p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="Private">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Private docs</h3>
+						</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="_man/manServer.pl"><h4 class="list-group-item-heading">Man Server Script</h4><p class="list-group-item-text">Man Server</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="_man/manServer.html"><h4 class="list-group-item-heading">Man Server Doc</h4><p class="list-group-item-text">Document</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="web/developer.mozilla.org/en-US/"><h4 class="list-group-item-heading">developer.mozilla.org</h4><p class="list-group-item-text">Main site of MDN</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate_3.6.10/"><h4 class="list-group-item-heading">Hibernate 3 Dir</h4><p class="list-group-item-text">Dir Index</p></a></li>
+								<li class="list-group-item"><span class="badge">Bookmark</span><a href="javaweb/hibernate/Hibernate-5.1.0/"><h4 class="list-group-item-heading">Hibernate 5 Dir</h4><p class="list-group-item-text">Dir Index</p></a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--#endif -->
+			</div>
+
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="/_link/jquery-1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/_link/bootstrap-3.3.7/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			var bookmarks;
+			function refreshBookmarks(){
+				bookmarks=localStorage.getItem("bookmarks");
+				if(bookmarks==null)
+					bookmarks=[];
+				else
+					bookmarks=JSON.parse(bookmarks);
+				var container=$("#bookmarks");
+				container.html("");
+				$.each(bookmarks,function(idx,elem){
+					container.append('<a class="btn btn-primary" type="button" href="'+elem.link+'">'+elem.title+'<span class="badge">X</span></a>');
+				});
+			}
+
+			$(function(){
+				$("#navtabs>li").click(function(){
+					localStorage.setItem("tabIndex",$(this).index());
+				});
+				var tabIndex=localStorage.getItem("tabIndex");
+				if(tabIndex!=null)
+					$("#navtabs>li>a").eq(tabIndex).tab("show");
+
+				$("li.list-group-item>span.badge").click(function(){
+					var item=$(this).parent();
+					bookmarks.push({title:item.find("h4").html(),link:item.find("a").attr("href")});
+					localStorage.setItem("bookmarks",JSON.stringify(bookmarks));
+					refreshBookmarks();
+				});
+				$("div#bookmarks").on("click","span.badge",function(evt){
+					evt.preventDefault();
+					bookmarks.splice($(this).parent().index(),1);
+					localStorage.setItem("bookmarks",JSON.stringify(bookmarks));
+					refreshBookmarks();
+				});
+				refreshBookmarks();
+			});
+		</script>
+	</body>
+</html>
